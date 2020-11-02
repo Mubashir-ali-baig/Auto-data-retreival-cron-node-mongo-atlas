@@ -4,7 +4,7 @@ const http = require('http')
 const debug=require('debug')('index:server')
 const MongoClient = require('mongodb').MongoClient;
 const dboper = require('./mongo-functions');
-const url = "mongodb+srv://admin:admin@node.2trvo.mongodb.net/node?retryWrites=true&w=majority";
+const url = "";
 const app=express()
 app.use(express.json())
 const connect = MongoClient.connect(url,{useNewUrlParser:true,useUnifiedTopology:true})
